@@ -1,5 +1,7 @@
 package fr.diginamic.equals;
 
+import java.util.Objects;
+
 public class City {
 
 	// Instance attributes
@@ -23,7 +25,7 @@ public class City {
 			return false;
 		}
 		City cast = (City) obj;
-		if (this.name.equals(cast.getName()) && this.population == cast.getPopulation()) {
+		if (Objects.equals(this.name, cast.getName()) && this.population == cast.getPopulation()) {
 			return true;
 		}
 		return false;
