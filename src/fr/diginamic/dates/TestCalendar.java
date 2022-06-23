@@ -29,10 +29,10 @@ public class TestCalendar {
 		System.out.println("Date et heure actuelles: " + dateTimeFormat.format(dateNow));
 		System.out.println();
 		
-		SimpleDateFormat dateTimeFormatFR = new SimpleDateFormat ("EEEE dd MMMM yyyy HH:mm:ss", new Locale("FR"));
-		SimpleDateFormat dateTimeFormatRU = new SimpleDateFormat ("EEEE dd MMMM yyyy HH:mm:ss", new Locale("RU"));
-		SimpleDateFormat dateTimeFormatCN = new SimpleDateFormat ("EEEE dd MMMM yyyy HH:mm:ss", new Locale("ZH"));
-		SimpleDateFormat dateTimeFormatDE = new SimpleDateFormat ("EEEE dd MMMM yyyy HH:mm:ss", new Locale("DE"));
+		DateFormat dateTimeFormatFR = new SimpleDateFormat ("EEEE dd MMMM yyyy HH:mm:ss", new Locale("fr", "FR"));
+		DateFormat dateTimeFormatRU = new SimpleDateFormat ("EEEE dd MMMM yyyy HH:mm:ss", new Locale("ru", "RU"));
+		DateFormat dateTimeFormatCN = new SimpleDateFormat ("EEEE dd MMMM yyyy HH:mm:ss", new Locale("zh", "CN"));
+		DateFormat dateTimeFormatDE = new SimpleDateFormat ("EEEE dd MMMM yyyy HH:mm:ss", new Locale("de", "DE"));
 		
 		System.out.println("Locale France: " + dateTimeFormatFR.format(dateNow));
 		System.out.println();
@@ -42,6 +42,7 @@ public class TestCalendar {
 		System.out.println();
 		System.out.println("Locale Allemagne: " + dateTimeFormatDE.format(dateNow));
 		System.out.println();
+		
 	}
 
 }
