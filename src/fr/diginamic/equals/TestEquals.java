@@ -1,6 +1,7 @@
 package fr.diginamic.equals;
 
-import fr.diginamic.enumeration.Continent;
+import entities.City;
+import entities.enums.Continent;
 
 public class TestEquals {
 

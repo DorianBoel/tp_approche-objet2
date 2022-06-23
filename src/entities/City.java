@@ -1,8 +1,9 @@
-package fr.diginamic.equals;
+package entities;
 
 import java.util.Objects;
 
-import fr.diginamic.enumeration.Continent;
+import entities.enums.Continent;
+import utils.NumUtils;
 
 public class City {
 
@@ -20,7 +21,7 @@ public class City {
 	
 	// Instance methods
 	public void displayInfo() {
-		System.out.println(this.name + " (" + this.continent.getName() + "), " + this.population + " habitants");
+		System.out.println(this.name + " (" + this.continent.getName() + "), " + NumUtils.formatLocale(this.population) + " habitants");
 	}
 	
 	@Override

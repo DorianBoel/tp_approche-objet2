@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import fr.diginamic.equals.City;
+import entities.City;
+import entities.enums.Continent;
+import entities.enums.Season;
 
 public class TestEnum {
 
@@ -26,7 +28,6 @@ public class TestEnum {
 		System.out.println("'" + seasonName + "' correspond à l'instance de saison " + Season.getInstanceFromName(seasonName));
 		System.out.println();
 		
-
 		List<City> cityList = new ArrayList<>(
 			Arrays.asList(
 				new City("New York", 8_804_190, Continent.AMERICA),

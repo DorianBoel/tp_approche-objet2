@@ -1,4 +1,4 @@
-package fr.diginamic.enumeration;
+package entities.enums;
 
 public enum Season {
 
