@@ -2,21 +2,25 @@ package fr.diginamic.equals;
 
 import java.util.Objects;
 
+import fr.diginamic.enumeration.Continent;
+
 public class City {
 
 	// Instance attributes
 	private String name;
 	private int population;
+	private Continent continent;
 	
 	// Constructor
-	public City(String name, int population) {
+	public City(String name, int population, Continent continent) {
 		this.name = name;
 		this.population = population;
+		this.continent = continent;
 	}
 	
 	// Instance methods
 	public void displayInfo() {
-		System.out.println(name + ", " + population + " habitants");
+		System.out.println(this.name + " (" + this.continent.getName() + "), " + this.population + " habitants");
 	}
 	
 	@Override
@@ -33,11 +37,15 @@ public class City {
 
 	// Getters
 	public String getName() {
-		return name;
+		return this.name;
 	}
 	
 	public int getPopulation() {
-		return population;
+		return this.population;
+	}
+	
+	public Continent getContinent() {
+		return this.continent;
 	}
 
 	// Setters
@@ -47,6 +55,10 @@ public class City {
 
 	public void setPopulation(int population) {
 		this.population = population;
+	}
+	
+	public void setContinent(Continent continent) {
+		this.continent =  continent;
 	}
 	
 }
